@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  node:
+    build: ./
+    tty: true
+    volumes:
+      - ./:/home/node/root
+      - node_modules:/home/node/root/node_modules
+volumes:
+  node_modules:
